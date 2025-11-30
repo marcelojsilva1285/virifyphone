@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virify Phone</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      Virifyphone
+      <i class='bx  bx-phone-incoming'></i>
+    </h1>
+
+  </header>
+
+  <main>
+    <section class="section-left">
+      <h2>Validação de número de telefone e busca pela operadora</h2>
+      <p>Faça upload da sua lista CSV ou use nossa poderosa API em tempo real</p>
+      <span>Apoiando 248 países e territórios.</span>
+      <a href="#">GANHE 1.000 CRÉDITOS GRÁTIS AGORA</a>
+    </section>
+
+    <section class="section-right">
+      <form>
+
+        <div class="form-action">
+          <label for="phone">Tente. Digite um número de telefone:</label>
+         <div class="input-button">
+            <input type="tel" id="phone" placeholder="+55 11 96123-4567">
+            <button type="submit">GO</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="section-right-result">
+        <ul>
+          <li class="valid" ><span >Valido: </span>True</li>
+          <li ><span>Pais: </span>Brazil</li>
+          <li ><span>Operadora: </span>Tim</li>
+          <li ><span>Tipo: </span>Mobile</li>
+          <li ><span>Internacional: </span>+55 44 99902-8523</li>
+          <li ><span>Numero Local: </span>(44) 99902-8523</li>
+          <li ><span>Número E164: </span>+5544999028523</li>
+          <li ><span>Região: </span>Paraná</li>
+          <li ><span>Código de discagem: </span>55</li>
+
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+<script type="module" src="app.js"></script>
+</body>
+
+</html>

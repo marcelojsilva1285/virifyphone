@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+body {
+  
+  height: 100vh;
+  margin: 30px;
+
+  background-image: linear-gradient(rgb(0 0 255 / 0.5), rgb(0 0 0 / 0.5)), url("assets/background.jpg")  ;
+   
+
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  /* border-bottom: 1px solid #999; */
+
+
+  h1 {
+    display: flex;
+    font-size: 3em;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+
+    i {
+     
+      padding: 5px;
+      border-radius: 50px;
+      border: 3px solid #fff;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 100px; */
+  /* gap: 50px; */
+  padding: 30px;
+
+}
+
+.section-left,
+.section-right {
+  width: 700px;
+  color: #FFFFFF;
+}
+
+.section-left {
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+
+  span {
+    display: block;
+    font-weight: 200;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 200;
+    background-color: #157347;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-size: 1em;
+
+    box-shadow: 10px 10px 10px #00000025;
+
+    &:hover {
+      background-color: rgb(25, 135, 84);
+    }
+  }
+}
+
+/* Seção right */
+
+.form-action {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 200;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+
+  .input-button {
+    display: flex;
+    gap: 5px;
+
+    input {
+      padding: 10px;
+      flex-grow: 1;
+      background-color: #FFFFFF;
+      border: none;
+      outline-color: #0D6EFD;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0D6EFD;
+      border: none;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(13, 109, 253, 0.752);
+      }
+    }
+  }
+}
+
+.section-right-result {
+  margin-top: 10px;
+  background-color: #0000001b;
+  padding: 10px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .valid{
+      color: #76FB98;
+    }
+
+    li {
+      font-size: 1.1em;
+      color: #FFFFFF;
+
+       span {
+        color: #999;
+
+      }
+
+    }
+
+  }
+}
