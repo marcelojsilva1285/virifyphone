@@ -1,3 +1,18 @@
-import { API_KEY } from "./config.js";
+import { verifyPhone } from "./config.js";
+import {exibirDados} from "./ui.js"
 
-console.log(API_KEY)
+const formSubmit = document.querySelector('form')
+const inputPhone = document.getElementById('phone')
+
+
+formSubmit.addEventListener('submit', async (event)=>{
+  event.preventDefault()
+
+  const numeroDigitado = inputPhone.value
+
+
+ const dados = await  verifyPhone(numeroDigitado)
+
+ exibirDados(dados)
+
+})

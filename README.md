@@ -1,7 +1,5 @@
 site https://veriphone.io/
 
-API = https://api.veriphone.io/v2/verify?phone=%2B55-44999028523&key=5E0558885500421D83E4623EC340DCD5
-
 {
 "status": "success",
 "phone": "+5544999028523",
@@ -16,3 +14,7 @@ API = https://api.veriphone.io/v2/verify?phone=%2B55-44999028523&key=5E055888550
 "e164": "+5544999028523",
 "carrier": "TIM"
 }
+
+
+
+
